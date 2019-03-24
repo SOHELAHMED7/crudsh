@@ -16,9 +16,9 @@ filename="users.txt"
 # export filename
 
 ./src/add.sh
-src ./list_all.sh
-src ./quit.sh
-src ./show_menu.sh
+./src/list_all.sh
+./src/quit.sh
+./src/show_menu.sh
 
 # popo_po
 # popo_po()
