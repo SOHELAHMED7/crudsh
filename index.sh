@@ -3,9 +3,9 @@
 # fkl=`cat users.txt`
 # echo $fkl
 # fkl="Name:Email:Phone $fkl"
-cat users.txt | column -t -s:
+# cat users.txt | column -t -s:
 
-exit
+# exit
 
 # to list menu
 
@@ -15,10 +15,10 @@ filename="users.txt"
 # echo ${filename}
 # export filename
 
-. ./add.sh
-. ./list_all.sh
-. ./quit_me.sh
-. ./show_menu.sh
+./src/add.sh
+src ./list_all.sh
+src ./quit_me.sh
+src ./show_menu.sh
 
 # popo_po
 # popo_po()
