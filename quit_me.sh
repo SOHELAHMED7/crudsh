@@ -1,3 +1,0 @@
-quit_me() {
-    exit
-}
