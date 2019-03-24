@@ -27,7 +27,7 @@ take_menu_input_from_user() {
         list_all
     elif [[ $option == "q" ]]; then
         echo "Quit"
-        quit_me
+        quit
     else
         echo "None matched"
     fi

@@ -1,3 +1,3 @@
-quit_me() {
+quit() {
     exit
 }

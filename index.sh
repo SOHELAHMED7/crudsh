@@ -17,7 +17,7 @@ filename="users.txt"
 
 ./src/add.sh
 src ./list_all.sh
-src ./quit_me.sh
+src ./quit.sh
 src ./show_menu.sh
 
 # popo_po
