@@ -1,0 +1,3 @@
+quit_me() {
+    exit
+}
