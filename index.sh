@@ -1,24 +1,18 @@
 #!/bin/bash
 
-# fkl=`cat users.txt`
-# echo $fkl
-# fkl="Name:Email:Phone $fkl"
-# cat users.txt | column -t -s:
-
+# trap is kind of event hook. If user press Ctrl + c then callback is called
+# trap "callback" 2
 # exit
-
-# to list menu
-
-# trap "popo_po" 2
-
 filename="users.txt"
 # echo ${filename}
 # export filename
 
-./src/add.sh
-./src/list_all.sh
-./src/quit.sh
-./src/show_menu.sh
+. ./src/add.sh
+. ./src/validation.sh
+. ./src/list_all.sh
+. ./src/quit.sh
+. ./src/show_menu.sh
+. ./src/take_menu_input_from_user.sh
 
 # popo_po
 # popo_po()
@@ -44,8 +38,8 @@ fi
 
 
 show_menu
+
 # show_menu_result="$(showmenu)"
 # export $show_menu_result
 
-
-. ./take_menu_input_from_user.sh
+take_menu_input_from_user

@@ -2,6 +2,8 @@
 
 # . ./show_menu.sh
 
+# ./src/add.sh
+
 take_menu_input_from_user() {
     echo "Enter any operation number"
     read option
@@ -38,4 +40,4 @@ take_menu_input_from_user() {
 }
 
 # echo $show_menu_result
-take_menu_input_from_user
+# take_menu_input_from_user

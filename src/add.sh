@@ -1,4 +1,4 @@
-. ./validation.sh
+./src/validation.sh
 
 add() {
     # echo "$@"
