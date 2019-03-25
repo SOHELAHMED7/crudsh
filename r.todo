@@ -1,0 +1,39 @@
+  Getting started
+  - Create a task by adding a '-' in front of it
+  ----  Add hyphens to change the color
+    -----   5 looks urgent
+    ----    4 for important items
+    --- 3 for the middle
+    --  2 for the pretty light stuff
+    -   1 for the low-priority or easy stuff
+  -4    Alternatively, you can add a number after one hyphen
+    -3  This starts with a `-3`
+    -2  `-2` is the same `--`
+    -1  etc...
+    -   This is new in 1.0.5
+
+-4    Alternatively, you can add a number after one hyphen
+    -3  This starts with a `-3`
+    -2  `-2` is the same `--`
+    -1  etc...
+    -   This is new in 1.0.5
+
+ !- 566464654
+
+
+
+-4 [DOING] edit
+-4 edit user
+-4 validate user  edit
+
+-4 delete user
+-4 ask confirmation before delete
+-4 delete
+
+-4 search user
+-4 sort
+-4 pagination
+
+-4 Repo
+	-4 readme
+	-4 code comment

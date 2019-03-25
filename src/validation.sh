@@ -1,5 +1,9 @@
 validate_duplicate() {
-    if [[ `grep -i $1: $filename | wc -l` -ne 0 ]]; then
+    # if [[ `grep -i $1: $filename | wc -l` -ne 0 ]]; then
+    find_user_record_count_by_name "$1" "$filename"
+
+    # $? is return value/exit status of last executed statement
+    if [[ $? -ne 0 ]]; then
         echo "No duplicate "$2" allowed"
         add_$2
     fi

@@ -22,6 +22,7 @@ take_menu_input_from_user() {
         list_all
     elif [[ $option == 6 ]]; then
         echo "Edit"
+        edit "$@"
     elif [[ $option == 7 ]]; then
         echo "Delete"
     elif [[ $option == 8 ]]; then
