@@ -1,0 +1,16 @@
+edit
+    1. which record you want to edit
+    2. search by name (grep/b that line)
+    3. if not found
+        3.1 show message user not found
+        3.2 go to step 1
+    4. if found
+        4.1 show read -e -i name to edit, if user dont want to edit the name then user will press enter and already stored value is not changed
+            & validate
+            & if invalid goto step 4.1
+
+        4.2 show read -e -i email to edit & validate
+        4.3 show read -e -i phone to edit & validate
+        4.4 got all data
+        4.5 change that line only in users.txt (dont delete that line and add new at the end) by find & replace by sed
+        4.6 show success message

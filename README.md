@@ -24,17 +24,7 @@ TODO
 
 
 
-show menu
-take input from user
 
-add user
-edit user
-delete user
-validate user when add and edit
-ask confirmation before delete
-save in file
 
-list all user
-search user
-sort
-pagination
+is it any good
+similar projects
