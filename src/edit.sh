@@ -28,7 +28,8 @@ edit() {
     #     edit
     # fi
 
-    edit_name
+    edit_name "$user"
+    edit_email "$user"
     # add_email
     # add_phone
 
@@ -41,9 +42,10 @@ edit() {
 
 edit_name() {
     # echo "Enter name: "
-    read -e -i "placeholder" name
-    echo $name
-    exit
+    stored_name=`fetch_part "$1" "1"`
+    read -e -i "$stored_name" name
+    # echo $name
+    # exit
 
     # name=$name
     # echo $name"777"
@@ -54,14 +56,17 @@ edit_name() {
     #     add_name
     # fi
 
-    opn="name"
+    opn="edit_name"
     # echo $name
     # echo $opn
     # exit
 
     validate_empty "$name" "$opn"
     validate_colon "$name" "$opn"
-    validate_duplicate "$name" "$opn"
+
+    if [[ ! $name = $stored_name ]]; then
+        validate_duplicate "$name" "$opn"
+    fi
 
     # if [[ `validate_colon` -eq 1 ]]; then
     #     echo "Colon are not allowed in name"
@@ -76,16 +81,34 @@ edit_name() {
     # else
 
     # setting global variable (not recommended, but kept for this exercise)
-    name_added=$name
-
+    name_edited=$name
+    echo $name_edited
+    # exit
     # fi
 }
+
+
+edit_email() {
+    stored_email=`fetch_part "$1" "2"`
+    read -e -i "$stored_email" email
+
+    opn="edit_email"
+
+    validate_empty "$email" "$opn"
+    validate_email_with_regex "$email" "$opn"
+
+    email_edited=$email
+    echo $email_edited
+    exit
+}
+
+
 
 # add_email () {
 #     echo "Enter email: "
 #     read email
 
-#     opn="email"
+#     opn="edit_email"
 
 #     # pass variables in double quotes and variables with empty value are completely neglected
 #     validate_empty "$email" "$opn"
@@ -98,9 +121,14 @@ edit_name() {
 #     echo "Enter phone: "
 #     read phone
 
-#     opn="phone"
+#     opn="edit_phone"
 
 #     validate_phone_with_regex "$phone" "$opn"
 
 #     phone_added=$phone
 # }
+
+fetch_part () {
+    local entity=`echo $1 | cut -d':' -f$2`
+    echo $entity
+}

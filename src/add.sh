@@ -30,10 +30,7 @@ add_name() {
     #     add_name
     # fi
 
-    opn="name"
-    # echo $name
-    # echo $opn
-    # exit
+    opn="add_name"
 
     validate_empty "$name" "$opn"
     validate_colon "$name" "$opn"
@@ -61,7 +58,7 @@ add_email () {
     echo "Enter email: "
     read email
 
-    opn="email"
+    opn="add_email"
 
     # pass variables in double quotes and variables with empty value are completely neglected
     validate_empty "$email" "$opn"
@@ -74,7 +71,7 @@ add_phone() {
     echo "Enter phone: "
     read phone
 
-    opn="phone"
+    opn="add_phone"
 
     validate_phone_with_regex "$phone" "$opn"
 

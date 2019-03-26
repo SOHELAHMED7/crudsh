@@ -1,5 +1,6 @@
 # sql_queries
-# it is not actual SQL query but will do similar stuffs
+# it is not actual SQL query but will do similar stuffs on file
+# like SELECT UPDATE INSERT DELETE ...
 
 find_user_record_count_by_name() {
     count=`grep -i "$1:" $2 | wc -l`
