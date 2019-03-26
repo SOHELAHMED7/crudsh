@@ -19,7 +19,7 @@ TODO
 1. [ ]  order of files to go through for eg first index.php then show menu then take input from user then for eg add then validation etc
 1. [ ]  similar projects
 1. [ ]  its simple and no dependendies
-1. [ ]
+1. [ ]  remove static header from data file users.txt
 
 
 
@@ -28,3 +28,7 @@ TODO
 
 is it any good
 similar projects
+
+
+function ret
+    https://linuxhint.com/return-string-bash-functions/
