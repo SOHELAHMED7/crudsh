@@ -26,6 +26,7 @@ filename="users.txt"
 . ./src/show_menu.sh
 . ./src/take_menu_input_from_user.sh
 . ./src/sql_queries.sh
+. ./src/delete.sh
 
 # popo_po
 # popo_po()

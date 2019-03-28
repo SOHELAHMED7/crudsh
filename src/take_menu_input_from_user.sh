@@ -25,6 +25,7 @@ take_menu_input_from_user() {
         edit "$@"
     elif [[ $option == 7 ]]; then
         echo "Delete"
+        delete "$@"
     elif [[ $option == 8 ]]; then
         echo "List All (No Pagination)"
         list_all

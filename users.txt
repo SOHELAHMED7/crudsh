@@ -1,8 +1,5 @@
 Name:Email:Phone
 a:a@a.com:7894561
-asd:dd@d.com:4587
-asdf:sss@s.com:7878
-q:aa@sa.com:4554
 w:a@a.com:7894
 az:a@aa.com:7894
 zx:a@c.com:7845
@@ -19,7 +16,6 @@ op:popo@ppoo.po:6465
 gg:g@g.g:
 ff:f@f.f:5
 tt:t@t.t:1234567890
-fd:fd@ds.sd:987
 dssdfsdf:fssdf@mbhkj.sdf:654654
 gdr:d@sd.ds:5
-pok:d@dfgd.fdg:6546465654
+
