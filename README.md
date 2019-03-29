@@ -20,6 +20,7 @@ TODO
 1. [ ]  similar projects
 1. [ ]  its simple and no dependendies
 1. [ ]  remove static header from data file users.txt
+1. [ ]  unit tests (https://github.com/sstephenson/bats)
 
 
 
