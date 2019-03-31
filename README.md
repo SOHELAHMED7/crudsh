@@ -21,7 +21,10 @@ TODO
 1. [ ]  its simple and no dependendies
 1. [ ]  remove static header from data file users.txt
 1. [ ]  unit tests (https://github.com/sstephenson/bats)
-
+1. [ ]  master foo link in readme - why should i learn and also not over learn it?
+1. [ ]
+1. [ ]
+1. [ ]
 
 
 
