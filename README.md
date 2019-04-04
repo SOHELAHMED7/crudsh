@@ -3,7 +3,7 @@ WIP; Simple file based CRUD to learn basic and widely used bash shell scripts sn
 
 TODO
 
-1. [ ]  validation
+1. [x]  validation
 1. [ ]  steve stephens
 1. [ ]  crud
 1. [ ]  education purpose leasrnign (mention clearly purpose and intent)
@@ -19,10 +19,9 @@ TODO
 1. [ ]  order of files to go through for eg first index.php then show menu then take input from user then for eg add then validation etc
 1. [ ]  similar projects
 1. [ ]  its simple and no dependendies
-1. [ ]  remove static header from data file users.txt
 1. [ ]  unit tests (https://github.com/sstephenson/bats)
 1. [ ]  master foo link in readme - why should i learn and also not over learn it?
-1. [ ]
+1. [ ]  ref to https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php for if condition
 1. [ ]
 1. [ ]
 
@@ -36,3 +35,16 @@ similar projects
 
 function ret
     https://linuxhint.com/return-string-bash-functions/
+https://github.com/andrewbihl/bsed
+
+
+
+
+TODO:
+remove header data storage file
+pagination
+searching
+sorting
+unit tests
+code doc
+readme
