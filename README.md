@@ -41,10 +41,10 @@ https://github.com/andrewbihl/bsed
 
 
 TODO:
-remove header data storage file
 pagination
 searching
 sorting
 unit tests
 code doc
 readme
+DONE - remove header data storage file

@@ -1,3 +1,3 @@
 quit() {
-    exit
+    exit 0
 }
