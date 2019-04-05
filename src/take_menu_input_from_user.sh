@@ -10,6 +10,7 @@ take_menu_input_from_user() {
 
     if [[ $option == 1 ]]; then
         echo "List"
+        list_with_pagination 3
     elif [[ $option == 2 ]]; then
         echo "Search"
     elif [[ $option == 3 ]]; then

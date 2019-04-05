@@ -21,6 +21,7 @@ filename="users.txt"
 . ./src/add.sh
 . ./src/edit.sh
 . ./src/validation.sh
+. ./src/list_with_pagination.sh
 . ./src/list_all.sh
 . ./src/quit.sh
 . ./src/show_menu.sh
