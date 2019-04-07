@@ -4,13 +4,18 @@
 
 # ./src/add.sh
 
+total_user=`grep -c '.' $filename`
+per_page_user=3
+page_number=1
+
 take_menu_input_from_user() {
     echo "Enter any operation number"
     read option
 
     if [[ $option == 1 ]]; then
         echo "List"
-        list_with_pagination 3
+        page_number=1
+        list_with_pagination $per_page_user
     elif [[ $option == 2 ]]; then
         echo "Search"
     elif [[ $option == 3 ]]; then
@@ -33,6 +38,25 @@ take_menu_input_from_user() {
     elif [[ $option == "q" ]]; then
         echo "Quit"
         quit
+    elif [[ $option == "c" ]]; then
+        echo "change the number of users to show per page (natural numbers only)"
+        change_no_of_user_per_page
+    elif [[ $option == "f" ]]; then
+        echo "First page"
+        page_number=1
+        list_with_pagination $per_page_user
+    elif [[ $option == "n" ]]; then
+        echo "Next page"
+        page_number=$(expr "$page_number" '+' 1)
+        list_with_pagination $per_page_user
+    elif [[ $option == "p" ]]; then
+        echo "Previous page"
+        page_number=$(expr "$page_number" '-' 1)
+        list_with_pagination $per_page_user
+    elif [[ $option == "l" ]]; then
+        echo "Last page"
+        page_number=`ceiling_divide $total_user $per_page_user`
+        list_with_pagination "$per_page_user"
     else
         echo "None matched"
     fi

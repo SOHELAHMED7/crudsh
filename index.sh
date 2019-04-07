@@ -28,6 +28,8 @@ filename="users.txt"
 . ./src/take_menu_input_from_user.sh
 . ./src/sql_queries.sh
 . ./src/delete.sh
+. ./src/common.sh
+. ./src/change_no_of_user_per_page.sh
 
 # popo_po
 # popo_po()

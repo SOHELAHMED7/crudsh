@@ -41,10 +41,30 @@ https://github.com/andrewbihl/bsed
 
 
 TODO:
-pagination
+pagination string
+    next page | prev page per 1 2 3 page records | first page last page
+summary
 searching
 sorting
 unit tests
 code doc
 readme
 DONE - remove header data storage file
+
+
+pagination
+    show_menu
+        DONE first page (f)
+        DONE next page (n)
+        DONE prev page (p)
+        DONE last page (l)
+        BAKI page number (p1 for 1st first, p2 for second ...)
+        BAKI show pagination like
+        BAKI p | f | p2 | p3 | ... | p9| p10 ... | p11 | p12 | l | n
+
+        DONE take user input
+        calculate  -
+        DONE page no -
+        DONE per page result number show -
+        show all pages link -
+        show total pages link

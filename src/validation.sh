@@ -40,3 +40,11 @@ validate_phone_with_regex() {
         $2
     fi
 }
+
+validate_natural_number() {
+    pattern="^[0-9]+$" # simple phone validation
+    if [[ ! $1 =~ $pattern && -n $1 ]]; then
+        echo "Invalid number"
+        $2
+    fi
+}
