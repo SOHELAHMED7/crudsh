@@ -9,7 +9,7 @@ change_no_of_user_per_page () {
     validate_empty "$number" "$opn"
     validate_natural_number "$number" "$opn"
 
-    echo "Changed successfully"
+    # echo "Changed successfully"
     per_page_user=$number
 
     # name_added=$name

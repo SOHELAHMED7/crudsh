@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# if [[ "p664564" =~ p[1-9]\d* ]]; then
+# # if [[ 6 =~ '^[1-9]\d*$' ]]; then
+#     echo "p page"
+#     # page_number=${option:1}
+#     # echo $page_number
+# fi
 # function F2()
 # {
 #     local retval='Using BASH Function'
@@ -30,6 +36,7 @@ filename="users.txt"
 . ./src/delete.sh
 . ./src/common.sh
 . ./src/change_no_of_user_per_page.sh
+. ./src/search.sh
 
 # popo_po
 # popo_po()

@@ -2,12 +2,15 @@
 # $1 $per_page_user
 
 list_with_pagination () {
-
-
-
     page_number_for_offset=$( expr "$page_number" '-' 1 )
     offset=$( expr "$per_page_user" '*' "$page_number_for_offset" )
     offset_plus_one=$( expr "$offset" '+' "1" )
+
+    if [[ -n $search_query ]]; then
+        total_user=`grep "$search_query" $filename | wc -l`
+    else
+        total_user=`grep -cv ^$ $filename`
+    fi
 
     if [[ $offset_plus_one -gt $total_user ]]; then
         echo "No further users to show"
@@ -31,18 +34,11 @@ list_with_pagination () {
 
     # tac $filename | egrep -m $1 . | column -t -s: > sed -n '"$offset_plus_one","$end_number"p'
 
-    tac $filename  | column -t -s: | sed -n "$offset_plus_one","$end_number"p
-    user_found=`tac $filename  | column -t -s: | sed -n "$offset_plus_one","$end_number"p | wc -l`
+    grep "$search_query" $filename  | `echo $sort` | column -t -s: | sed -n "$offset_plus_one","$end_number"p
+
+    user_found=`grep "$search_query" $filename | sed -n "$offset_plus_one","$end_number"p | wc -l`
     end_number=$( expr "$offset" '+' "$user_found" )
 
 
-    echo "showing $offset_plus_one - $end_number ($user_found) users from "$total_user" (page number: $page_number) (per-page: $per_page_user) " # TODO add pager and per-page result properly
+    echo -e "\nShowing $offset_plus_one - $end_number ($user_found) users from "$total_user" (page number: $page_number of `ceiling_divide $total_user $per_page_user`) (per-page: $per_page_user) "
 }
-
-# non empty line count of a file
-# grep -c '.' $filename
-#
-
-# todo show summary
-# show pagination like
-# p | f | p2 | p3 | ... | p9| p10 ... | p11 | p12 | l | n

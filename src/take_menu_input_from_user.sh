@@ -4,11 +4,16 @@
 
 # ./src/add.sh
 
-total_user=`grep -c '.' $filename`
+
+sort="tac" # name DESC sort by default
+total_user=`grep -cv ^$ $filename` # ignore empty lines
 per_page_user=3
 page_number=1
+search_query=""
+
 
 take_menu_input_from_user() {
+    # list_with_pagination $per_page_user
     echo "Enter any operation number"
     read option
 
@@ -57,6 +62,29 @@ take_menu_input_from_user() {
         echo "Last page"
         page_number=`ceiling_divide $total_user $per_page_user`
         list_with_pagination "$per_page_user"
+    elif [[ "$option" =~ p[1-9]\d* ]]; then
+        page_number=${option:1}
+        echo "Page number: $page_number"
+        list_with_pagination "$per_page_user"
+    elif [[ $option == "s" ]]; then
+        echo "Search"
+        search
+    elif [[ $option == "cs" ]]; then
+        echo "Search Sort cleared"
+        search_query=
+        sort="tac"
+    elif [[ $option == "ns" ]]; then
+        echo "Name Sorted"
+        sort="sort -t: -k 1n"
+    elif [[ $option == "nsd" ]]; then
+        echo "Name Sorted DESC"
+        sort="sort -r -t: -k 1nr"
+    elif [[ $option == "ps" ]]; then
+        echo "Phone Sorted"
+        sort="sort -t: -k 3n"
+    elif [[ $option == "psd" ]]; then
+        echo "Phone Sorted DESC"
+        sort="sort -r -t: -k 3nr"
     else
         echo "None matched"
     fi
