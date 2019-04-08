@@ -47,6 +47,7 @@ DONE summary
 DONE - remove header data storage file
 DONE searching
 DONE sorting
+1. list Default - add it
 unit tests
 code doc and refactoring
 readme
