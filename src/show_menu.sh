@@ -2,20 +2,21 @@ show_menu() {
     echo
     echo
     echo
-    echo "Hi... This is simple CRUD of user https://www.shellscript.sh/exercises.html"
+    echo "Crudsh: CRUD for user data stored in plain file in Bash"
     echo
     echo
     echo
     echo "1. List (default)"
 
-    echo "2. Search"
-    echo "3. Sort"
-    echo "cs. clear search and Sort DOING"
-    echo "4. Paginate"
-
     echo "5. Add"
     echo "6. Edit"
     echo "7. Delete"
+
+    echo "s. Search"
+
+    echo "cs. clear search and Sort"
+
+
 
     echo "8. List All (No Pagination)"
 

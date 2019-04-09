@@ -47,9 +47,10 @@ DONE summary
 DONE - remove header data storage file
 DONE searching
 DONE sorting
-1. list Default - add it
-unit tests
+DONE 1. list Default - add it
+menu make it short and readable
 code doc and refactoring
+unit tests
 readme
 release
 

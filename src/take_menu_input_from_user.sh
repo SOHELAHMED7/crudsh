@@ -10,17 +10,16 @@ total_user=`grep -cv ^$ $filename` # ignore empty lines
 per_page_user=3
 page_number=1
 search_query=""
-
+# option=1
 
 take_menu_input_from_user() {
-    # list_with_pagination $per_page_user
     echo "Enter any operation number"
     read option
 
     if [[ $option == 1 ]]; then
         echo "List"
         page_number=1
-        list_with_pagination $per_page_user
+        # list_with_pagination $per_page_user
     elif [[ $option == 2 ]]; then
         echo "Search"
     elif [[ $option == 3 ]]; then
@@ -49,23 +48,23 @@ take_menu_input_from_user() {
     elif [[ $option == "f" ]]; then
         echo "First page"
         page_number=1
-        list_with_pagination $per_page_user
+        # list_with_pagination $per_page_user
     elif [[ $option == "n" ]]; then
         echo "Next page"
         page_number=$(expr "$page_number" '+' 1)
-        list_with_pagination $per_page_user
+        # list_with_pagination $per_page_user
     elif [[ $option == "p" ]]; then
         echo "Previous page"
         page_number=$(expr "$page_number" '-' 1)
-        list_with_pagination $per_page_user
+        # list_with_pagination $per_page_user
     elif [[ $option == "l" ]]; then
         echo "Last page"
         page_number=`ceiling_divide $total_user $per_page_user`
-        list_with_pagination "$per_page_user"
+        # list_with_pagination "$per_page_user"
     elif [[ "$option" =~ p[1-9]\d* ]]; then
         page_number=${option:1}
         echo "Page number: $page_number"
-        list_with_pagination "$per_page_user"
+        # list_with_pagination "$per_page_user"
     elif [[ $option == "s" ]]; then
         echo "Search"
         search
@@ -87,9 +86,13 @@ take_menu_input_from_user() {
         sort="sort -r -t: -k 3nr"
     else
         echo "None matched"
+        # list_with_pagination $per_page_user
     fi
 
-    # echo "$show_menu_result"
+    # if [[ ! $option == 1 ]]; then
+    # fi
+
+    list_with_pagination $per_page_user
     show_menu
     take_menu_input_from_user
 }

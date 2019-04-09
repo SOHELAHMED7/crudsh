@@ -60,6 +60,7 @@ if [[ ! -f $filename ]]; then
 #     echo "yes file"
 fi
 
+list_with_pagination $per_page_user
 
 show_menu
 
