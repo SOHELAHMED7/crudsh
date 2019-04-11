@@ -50,8 +50,8 @@ DONE searching
 DONE sorting
 DONE 1. list Default - add it
 DONE menu make it short and readable
-DONE code doc and refactoring
-gitignore users.txt
+DONE gitignore users.txt
+code doc and refactoring
 unit tests
 travis ci build-setup
 readme

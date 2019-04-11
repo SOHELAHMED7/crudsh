@@ -20,12 +20,8 @@ edit() {
     edit_email
     edit_phone
 
-    # final
-    # echo "$edited_name:-----$edited_email:+++++++++:-$edited_phone"
     new_user=$edited_name:$edited_email:$edited_phone
-    # echo $user
-    # echo $filename
-    # exit
+
     sed -i -e 's/'"$user"'/'"$new_user"'/' $filename
     echo -e "\nEdit successful\n"
 }

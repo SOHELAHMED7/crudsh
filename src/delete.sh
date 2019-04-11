@@ -18,6 +18,5 @@ delete () {
 }
 
 delete_user_record () {
-    # sed -i -e 's/'"$user"'/'""'/' $filename
     sed -i '/'"$user"'/d' $filename
 }

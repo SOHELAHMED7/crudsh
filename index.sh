@@ -1,29 +1,9 @@
 #!/bin/bash
 
-# if [[ "p664564" =~ p[1-9]\d* ]]; then
-# # if [[ 6 =~ '^[1-9]\d*$' ]]; then
-#     echo "p page"
-#     # page_number=${option:1}
-#     # echo $page_number
-# fi
-# function F2()
-# {
-#     local retval='Using BASH Function'
-#     echo $retval
-# }
-
-# getval=$(F2)
-# echo $getval
-# exit
-
-
-# trap is kind of event hook. If user press Ctrl + c then callback is called
-# trap "callback" 2
-# exit
+# variable declared like below are global variable, can be used as $filename in all below loaded files
 filename="users.txt"
-# echo ${filename}
-# export filename
 
+# instead of writing a lot of code in single file, divide it in separate file and include here like autoloading in PHP
 . ./src/add.sh
 . ./src/edit.sh
 . ./src/validation.sh
@@ -38,33 +18,27 @@ filename="users.txt"
 . ./src/change_no_of_user_per_page.sh
 . ./src/search.sh
 
-# popo_po
-# popo_po()
-# {
-#     echo "you pressed ctrl + c"
-#     # mkdir dd5555
-# }
-
-
-# read pp
-
-# echo "pp"
-# sleep 55
-
-
 if [[ ! -f $filename ]]; then
     echo "Creating $filename ..."
     touch $filename
-# else
-#     pwd
-#     echo "yes file"
 fi
 
+# TODO test
+if [[ ! -r $filename ]]; then
+    echo "No read permission $filename ..."
+    exit 1
+fi
+
+# TODO test
+if [[ ! -w $filename ]]; then
+    echo "No write permission $filename ..."
+    exit 1
+fi
+
+# show user list during app bootstrap process
 list_with_pagination $per_page_user
 
 show_menu
 
-# show_menu_result="$(showmenu)"
-# export $show_menu_result
-
+# take operation number to perform
 take_menu_input_from_user

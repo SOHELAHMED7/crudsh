@@ -11,6 +11,4 @@ change_no_of_user_per_page () {
 
     # echo "Changed successfully"
     per_page_user=$number
-
-    # name_added=$name
 }

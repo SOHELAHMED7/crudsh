@@ -1,8 +1,5 @@
 validate_duplicate() {
-    # if [[ `grep -i $1: $filename | wc -l` -ne 0 ]]; then
     find_user_record_count_by_name "$1" "$filename"
-
-    # $? is return value/exit status of last executed statement
     if [[ $? -ne 0 ]]; then
         echo "No duplicate name allowed"
         $2
@@ -48,11 +45,3 @@ validate_natural_number() {
         $2
     fi
 }
-
-# validate_page_number() {
-#     pattern="^p[0-9]+$" # simple phone validation
-#     if [[ ! $1 =~ $pattern && -n $1 ]]; then
-#         echo "Invalid page number"
-#         $2
-#     fi
-# }

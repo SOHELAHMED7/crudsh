@@ -1,6 +1,7 @@
 # list_with_pagination.sh
-# $1 $per_page_user
 
+# this is main function for grid
+# $1 $per_page_user by default - 3
 list_with_pagination () {
     page_number_for_offset=$( expr "$page_number" '-' 1 )
     offset=$( expr "$per_page_user" '*' "$page_number_for_offset" )
@@ -29,16 +30,10 @@ list_with_pagination () {
     hs=`header_string`
     echo -e $hs
 
-    # user_found=`tac $filename | egrep -m $1 . | column -t -s: | wc -l`
-    # end_number=$( expr "$offset" '+' "$user_found" )
-
-    # tac $filename | egrep -m $1 . | column -t -s: > sed -n '"$offset_plus_one","$end_number"p'
-
     grep "$search_query" $filename  | `echo $sort` | column -t -s: | sed -n "$offset_plus_one","$end_number"p
 
     user_found=`grep "$search_query" $filename | sed -n "$offset_plus_one","$end_number"p | wc -l`
     end_number=$( expr "$offset" '+' "$user_found" )
-
 
     echo -e "\nShowing $offset_plus_one - $end_number ($user_found) users from "$total_user" (page number: $page_number of `ceiling_divide $total_user $per_page_user`) (per-page: $per_page_user) "
 }

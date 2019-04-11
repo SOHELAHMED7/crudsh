@@ -3,10 +3,6 @@ header_string () {
     echo $header_string # this is return
 }
 
-# generate_paginatio_string () {
-
-# }
-
 # @link https://stackoverflow.com/a/12536521/3794786
 ceiling_divide() {
     local ceiling_result=$((( $1 + $2 - 1) / $2))
