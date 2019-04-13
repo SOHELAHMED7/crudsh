@@ -52,6 +52,7 @@ DONE 1. list Default - add it
 DONE menu make it short and readable
 DONE gitignore users.txt
 code doc and refactoring
+test code index.php read and write permission
 unit tests
 travis ci build-setup
 readme

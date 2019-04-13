@@ -35,7 +35,7 @@ if [[ ! -w $filename ]]; then
     exit 1
 fi
 
-# show user list during app bootstrap process
+# show user list (1. default) during app bootstrap process
 list_with_pagination $per_page_user
 
 show_menu
