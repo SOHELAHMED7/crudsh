@@ -56,5 +56,6 @@ test code index.php read and write permission
 unit tests
 travis ci build-setup
 readme
+readme undo process ; just delete folder
 release - to public
 marketing

@@ -1,10 +1,10 @@
 # take_menu_input_from_user.sh
 
-sort="tac" # name DESC sort by default
-total_user=`grep -cv ^$ $filename` # ignore empty lines
+sort="tac" # most recently added first - sort by default
+total_user=`grep -cv ^$ $filename` # count total line=user; ignore empty lines
 per_page_user=3
 page_number=1
-search_query=""
+search_query="" # by default, there is no search
 
 take_menu_input_from_user() {
     echo "Enter any operation number"

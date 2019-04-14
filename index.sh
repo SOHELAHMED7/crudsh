@@ -23,13 +23,11 @@ if [[ ! -f $filename ]]; then
     touch $filename
 fi
 
-# TODO test
 if [[ ! -r $filename ]]; then
     echo "No read permission $filename ..."
     exit 1
 fi
 
-# TODO test
 if [[ ! -w $filename ]]; then
     echo "No write permission $filename ..."
     exit 1
@@ -38,7 +36,8 @@ fi
 # show user list (1. default) during app bootstrap process
 list_with_pagination $per_page_user
 
+# show menu to user at cli
 show_menu
 
-# take operation number to perform
+# take operation number to perform relavant operation
 take_menu_input_from_user
