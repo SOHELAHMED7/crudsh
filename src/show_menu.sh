@@ -1,4 +1,4 @@
-show_menu() {
+show_menu() { # this is one of several ways to define function
     echo
     echo "Crudsh - CRUD for user data stored in plain file in Bash"
     echo

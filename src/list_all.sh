@@ -3,6 +3,6 @@ list_all() {
     hs=`header_string` # "\nName\t Email\t\t Phone \n"
     echo -e $hs
 
-    cat users.txt | column -t -s:
+    cat users.txt | column -t -s: # format user list to display at CLI
 }
 

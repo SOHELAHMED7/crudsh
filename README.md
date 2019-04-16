@@ -33,6 +33,18 @@ is it any good
 
 
 
+Order of file/feature to view:
+index.sh
+show_menu.sh
+take_menu_input_from_user.sh
+add feature
+delete feature
+edit feature (validation, common.sh, sql_queries.sh)
+list_all.sh
+list_with_pagination.sh (seach, sort, pagination, per per user )
+
+
+
 function ret
     https://linuxhint.com/return-string-bash-functions/
 
@@ -51,11 +63,13 @@ DONE sorting
 DONE 1. list Default - add it
 DONE menu make it short and readable
 DONE gitignore users.txt
-code doc and refactoring
-test code index.php read and write permission
+DONE code doc
+DONE delete confirm
+DONE test code index.php read and write permission
 unit tests
 travis ci build-setup
 readme
-readme undo process ; just delete folder
-release - to public
-marketing
+readme undo process ; just delete folder | bash version
+release - to public and what next,  install,  uninstall, tldr (opt depend)
+gif | marketing
+

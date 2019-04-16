@@ -22,20 +22,20 @@ edit() {
 
     new_user=$edited_name:$edited_email:$edited_phone
 
-    sed -i -e 's/'"$user"'/'"$new_user"'/' $filename
+    sed -i -e 's/'"$user"'/'"$new_user"'/' $filename # find and replace
     echo -e "\nEdit successful\n"
 }
 
 edit_name() {
     echo "Edit name: "
-    read -e -i "$name" edited_name
+    read -e -i "$name" edited_name # show user pre-filled user name
 
     opn="edit_name"
 
     validate_empty "$edited_name" "$opn"
     validate_colon "$edited_name" "$opn"
 
-    if [[ ! $name = $edited_name ]]; then
+    if [[ ! $name = $edited_name ]]; then # dont allow duplicate name
         validate_duplicate "$edited_name" "$opn"
     fi
 }
@@ -45,7 +45,7 @@ edit_email() {
     stored_email=`fetch_part "$user" "2"`
 
     echo "Edit email: "
-    read -e -i "$stored_email" edited_email
+    read -e -i "$stored_email" edited_email # show user pre-filled user email
 
     opn="edit_email"
 
@@ -65,6 +65,6 @@ edit_phone() {
 }
 
 fetch_part () {
-    local entity=`echo $1 | cut -d':' -f$2`
-    echo $entity
+    local entity=`echo $1 | cut -d':' -f$2` # cut is used get a column(field) value from users.txt
+    echo $entity # return a value
 }

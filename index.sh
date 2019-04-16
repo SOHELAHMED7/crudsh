@@ -4,7 +4,7 @@
 filename="users.txt"
 
 # instead of writing a lot of code in single file, divide it in separate file and include here like autoloading in PHP
-. ./src/add.sh
+. ./src/add.sh # requiring necessary file (like include|require in PHP)
 . ./src/edit.sh
 . ./src/validation.sh
 . ./src/list_with_pagination.sh
@@ -34,10 +34,10 @@ if [[ ! -w $filename ]]; then
 fi
 
 # show user list (1. default) during app bootstrap process
-list_with_pagination $per_page_user
+list_with_pagination "$per_page_user" # this is function call. list_with_pagination is func name and $per_page_user is its first argument. Ensure to pass it in quote, or else empty value will not consider as argument. For eg $per_page_user is empty string  and $arg2 have some string value then only $arg2 is passed and will be passed as first arg in  list_with_pagination $per_page_user $arg2
 
 # show menu to user at cli
-show_menu
+show_menu # function called with no arg
 
 # take operation number to perform relavant operation
 take_menu_input_from_user

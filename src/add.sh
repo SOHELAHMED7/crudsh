@@ -1,25 +1,26 @@
-./src/validation.sh
+./src/validation.sh # requiring the necessary file
 
 add() {
-    add_name
-    add_email
+    add_name # <-- this is function call
+    add_email # <-- take email, validate and store in variable email_added
     add_phone
 
-    echo $name_added:$email_added:$phone_added >> $filename
+    echo $name_added:$email_added:$phone_added >> $filename # >> will append content at the end of file
     echo -e "\nSuccessfully added\n"
 }
 
 add_name() {
     echo "Enter name: "
-    read name
+    read name # <-- take input from user at cli
 
-    opn="add_name"
+    opn="add_name" # <-- global variable
 
+    # perform validation first, if failed it will call recursively to add_name
     validate_empty "$name" "$opn"
     validate_colon "$name" "$opn"
     validate_duplicate "$name" "$opn"
 
-    name_added=$name
+    name_added=$name # set global variable to use in other function. NOT recommended but OK for this app to learn bash
 }
 
 add_email () {

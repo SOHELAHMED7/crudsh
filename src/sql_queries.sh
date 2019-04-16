@@ -3,7 +3,7 @@
 # like SELECT UPDATE INSERT DELETE ...
 
 find_user_record_count_by_name() {
-    count=`grep -i "$1:" $2 | wc -l`
+    count=`grep -i "$1:" $2 | wc -l` # search by name and count
     return $count
 }
 
