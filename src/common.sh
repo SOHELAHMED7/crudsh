@@ -1,6 +1,9 @@
+#!/bin/bash
+
+# @link https://www.linuxjournal.com/content/return-values-bash-functions
 header_string () {
-    local header_string="\nName\t Email\t\t Phone \n" # header_string is not a global var
-    echo $header_string # this is how to return a value from a function
+    local header_string='\nName\t Email\t\t Phone \n' # header_string is not a global var
+    echo "$header_string" # this is how to return a value from a function
 }
 
 # @link https://stackoverflow.com/a/12536521/3794786

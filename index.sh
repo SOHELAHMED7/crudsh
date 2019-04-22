@@ -4,6 +4,7 @@
 filename="users.txt"
 
 # instead of writing a lot of code in single file, divide it in separate file and include here like autoloading in PHP
+# call another script from a script: https://stackoverflow.com/questions/8352851/how-to-call-shell-script-from-another-shell-script
 . ./src/add.sh # requiring necessary file (like include|require in PHP)
 . ./src/edit.sh
 . ./src/validation.sh
