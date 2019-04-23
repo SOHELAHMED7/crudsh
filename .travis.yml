@@ -2,10 +2,11 @@ sudo: required
 
 language: bash
 
-before_install:
-  - sudo apt-get update
-  - sudo apt-get install -y shunit2
+# before_install:
+#   - sudo apt-get update
+#   - sudo apt-get install -y shunit2
 
 script:
+  - pwd
   - cd $TRAVIS_BUILD_DIR
-  - shunit2 test/main.sh
+  - shunit2 main.sh
