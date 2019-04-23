@@ -1,5 +1,7 @@
 # crudsh (WIP)
 
+[![Build Status](https://travis-ci.com/SOHELAHMED7/crudsh.svg?branch=master)](https://travis-ci.com/SOHELAHMED7/crudsh)
+
 WIP; Simple file based CRUD to learn basic and widely used bash shell scripts snippets
 
 TODO
