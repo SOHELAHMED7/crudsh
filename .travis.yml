@@ -3,7 +3,7 @@ sudo: required
 language: bash
 
 before_script:
-  - apt install shunit2
+  - sudo apt install shunit2
 
 script:
   - shunit2 test/main.sh
