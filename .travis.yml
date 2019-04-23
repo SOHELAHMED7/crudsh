@@ -1,7 +1,7 @@
 language: bash
 
 before_script:
-  - sudo apt install shunit2
+  - apt install shunit2
 
 script:
   - shunit2 test/main.sh
