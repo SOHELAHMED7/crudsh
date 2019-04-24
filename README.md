@@ -51,8 +51,8 @@ put gif here TODO
  
  
 ### Testing
- 1.  `cd test`
- 1.  `shunit2 main.sh`
+ 1.  `$ cd test`
+ 1.  `$ shunit2 main.sh`
 
 ### Credits and Thanks
  - [This app is created as exercise provided at shellscript.sh by Steve Parker](https://www.shellscript.sh/exercises.html)
