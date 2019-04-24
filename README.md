@@ -2,9 +2,11 @@
 
 [![Build Status](https://travis-ci.com/SOHELAHMED7/crudsh.svg?branch=master)](https://travis-ci.com/SOHELAHMED7/crudsh)
 
-[CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) to learn basic and widely used bash(GNU Bourne Again SHell) shell scripts snippets
+[CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) to learn basic and widely used bash(GNU Bourne Again SHell) shell scripts snippets. Data stored in plain text file (see users.txt).
 
-put gif here TODO
+put gif here TODO | git maker and editor ezgif.com
+
+<p align="center"><img src="/asset/crudsh.gif?raw=true"/></p>
 
  ### Prerequisite
   - Knowledge
@@ -59,6 +61,7 @@ put gif here TODO
  - [Quick answer given at StackOverflow by mureinik](https://stackoverflow.com/a/55578826/3794786)
  - All links provided in code
  - users.txt is seeded from https://mockaroo.com/
+ - gif - https://ezgif.com
 
 ### Similar Project/Alternatives
  - https://www.shellscript.sh/exercises.html
