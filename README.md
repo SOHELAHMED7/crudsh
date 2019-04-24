@@ -7,30 +7,30 @@
 put gif here TODO
 
  ### Prerequisite
-  - Knowledge 
+  - Knowledge
     - Not any knowledge of any programming language required but good to have. It's a easy to learn resource for bash beginners.
   - Tools
     - CLI access to any \*nix based OS
   - No dependencies are required but there is one optional development dependency for unit testing - [shUnit2](https://github.com/kward/shunit2) and can be installed in Ubuntu by `sudo apt-get install shunit2`
   - Optional dependency: [tldr-pages/tldr](https://github.com/tldr-pages/tldr) will help you to learn commands more faster and easily
-     
- 
+
+
  ### Installation and setup
  1.  `$ git clone https://github.com/SOHELAHMED7/crudsh.git`
  1.  `$ cd crudsh`
  1.  `$ chmod +x index.sh`
  1.  `$ ./index.sh`
- 
+
  ### Undo installation
   - just delete `crudsh` folder
   - in case shunit2 is installed, hit `$ sudo apt-get purge shunit2`
- 
+
 ### Features
  - Validation (kept simple to focus on learning bash)
  - Add, Update, Delete
  - Listing with pagination, searching and sorting
  - Documented
- 
+
 ### Order of file/feature to review
  1.  index.sh
  1.  show_menu.sh
@@ -48,8 +48,8 @@ put gif here TODO
  - this is made for education and exercise purpose for bash beginners
  - a CLI app can also be developed by your favorite programming/ framework like Yii, Laravel etc without any knowledge of bash
  - _Bash is very ancient! Why should I learn_ see [kamranahmedse/developer-roadmap](https://github.com/kamranahmedse/developer-roadmap) and [Master Foo and the Ten Thousand Lines](http://www.catb.org/~esr/writings/unix-koans/ten-thousand.html)
- 
- 
+
+
 ### Testing
  1.  `$ cd test`
  1.  `$ shunit2 main.sh`
@@ -64,6 +64,7 @@ put gif here TODO
  - https://www.shellscript.sh/exercises.html
  - https://github.com/wlinnp/CRUD-operations-on-text-file
  - [andrewbihl/bsed](https://github.com/andrewbihl/bsed)
- 
+
 ### Is it any good?
 [Yes](https://news.ycombinator.com/item?id=3067434)
+
