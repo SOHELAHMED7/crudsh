@@ -6,6 +6,8 @@
 
 put gif here TODO | git maker and editor ezgif.com
 
+<p align="center"><img src="/asset/crudsh.gif?raw=true"/></p>
+
  ### Prerequisite
   - Knowledge
     - Not any knowledge of any programming language required but good to have. It's a easy to learn resource for bash beginners.
