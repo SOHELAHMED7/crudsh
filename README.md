@@ -4,7 +4,7 @@
 
 [CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) to learn basic and widely used bash(GNU Bourne Again SHell) shell scripts snippets. Data stored in plain text file (see users.txt).
 
-put gif here TODO
+put gif here TODO | git maker and editor ezgif.com
 
  ### Prerequisite
   - Knowledge
