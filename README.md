@@ -58,6 +58,7 @@ put gif here TODO
  - [This app is created as exercise provided at shellscript.sh by Steve Parker](https://www.shellscript.sh/exercises.html)
  - [Quick answer given at StackOverflow by mureinik](https://stackoverflow.com/a/55578826/3794786)
  - All links provided in code
+ - users.txt is seeded from https://mockaroo.com/
 
 ### Similar Project/Alternatives
  - https://www.shellscript.sh/exercises.html
