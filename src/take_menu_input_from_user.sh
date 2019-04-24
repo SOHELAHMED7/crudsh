@@ -23,7 +23,7 @@ take_menu_input_from_user() {
     elif [[ $option == 5 ]]; then
         echo "Add"
         add "$@" # pass all (redirect) argument which we recieve here to add function
-        list_all
+        # list_all
     elif [[ $option == 6 ]]; then
         echo "Edit"
         edit "$@"

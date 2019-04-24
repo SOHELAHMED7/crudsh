@@ -3,11 +3,11 @@
 # like SELECT UPDATE INSERT DELETE ...
 
 find_user_record_count_by_name() {
-    count=`grep -i "$1:" $2 | wc -l` # search by name and count
+    count=`grep -E ^\$1\: $2 | wc -l` # search by name and count
     return $count
 }
 
 find_user_record_by_name() {
-    local user=`grep -i "$1:" $2`
+    local user=`grep -E ^\$1\: $2`
     echo "$user"
 }

@@ -1,18 +1,28 @@
 delete () {
-    echo "Enter the record name which you want to delete: "
+    echo "Enter the record name which you want to edit: "
     read name
 
-    if [[ ! -n $name ]]; then # check if $name is empty (-n) (https://ryanstutorials.net/bash-scripting-tutorial/bash-if-statements.php#test)
+    while [[ ! -n $name ]]; do
         echo "Name cannot be blank"
-        delete
-    fi
+        read name
+    done
 
-    user=`find_user_record_by_name "$name" "$filename"` # function call and storing its return value in "user" global var
+    user=`find_user_record_by_name "$name" "$filename"`
 
-    if [[ ! -n $user ]]; then
+    while [[ ! -n $user ]]; do
         echo "No such user found! Please try different one "
-        delete
-    fi
+        read name
+
+        while [[ ! -n $name ]]; do
+            echo "Name cannot be blank"
+            read name
+        done
+
+        user=
+        user=`find_user_record_by_name "$name" "$filename"`
+        echo $user
+    done
+
 
     read -p "Are you sure? [Y/n]" ans
 

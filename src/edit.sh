@@ -4,17 +4,25 @@ edit() {
     echo "Enter the record name which you want to edit: "
     read name
 
-    if [[ ! -n $name ]]; then
+    while [[ ! -n $name ]]; do
         echo "Name cannot be blank"
-        edit
-    fi
+        read name
+    done
 
     user=`find_user_record_by_name "$name" "$filename"`
 
-    if [[ ! -n $user ]]; then
+    while [[ ! -n $user ]]; do
         echo "No such user found! Please try different one "
-        edit
-    fi
+        read name
+
+        while [[ ! -n $name ]]; do
+            echo "Name cannot be blank"
+            read name
+        done
+
+        user=
+        user=`find_user_record_by_name "$name" "$filename"`
+    done
 
     edit_name
     edit_email
