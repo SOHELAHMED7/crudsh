@@ -26,7 +26,7 @@ put gif here TODO
   - in case shunit2 is installed, hit `$ sudo apt-get purge shunit2`
  
 ### Features
- - Validation 
+ - Validation (kept simple to focus on learning bash)
  - Add, Update, Delete
  - Listing with pagination, searching and sorting
  - Documented
