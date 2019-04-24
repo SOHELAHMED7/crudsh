@@ -15,7 +15,7 @@
 
 testCeiling_divide() {
     local res=`ceiling_divide 10 3`
-    assertSame "$res" 4
+    assertSame "$res" 5
 }
 
 # testDelete_user_record() {

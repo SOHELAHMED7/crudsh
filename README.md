@@ -69,9 +69,10 @@ DONE code doc
 DONE delete confirm
 DONE test code index.php read and write permission
 DONE unit tests
-travis ci build-setup
+DONE travis ci build-setup
+
 readme
 readme undo process ; just delete folder | bash version | optional dev depend shunit2 for unit test | ubiuntu shunit2 install cmd guide
 release - to public and what next,  install,  uninstall, tldr (opt depend)
-gif | marketing
 
+gif | marketing
