@@ -77,7 +77,10 @@ take_menu_input_from_user() {
         echo "None matched"
     fi
 
-    list_with_pagination $per_page_user
+    if [[ $option != 8 ]]; then
+        list_with_pagination $per_page_user
+    fi
+
     show_menu
     take_menu_input_from_user # recursive function call, we will use it too much in this app | eg https://www.javatpoint.com/php-recursive-function
 }

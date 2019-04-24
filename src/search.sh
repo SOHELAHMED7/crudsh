@@ -9,5 +9,5 @@ search () {
         search
     fi
 
-    list_with_pagination "$per_page_user"
+    # list_with_pagination "$per_page_user"
 }

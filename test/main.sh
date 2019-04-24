@@ -38,5 +38,6 @@ testCeiling_divide() {
 #     assertSame 1 1
 # }
 #
+
 # things doesn't work due to sh and bash shell conflict in test env
 # see https://github.com/kward/shunit2#-test-skipping

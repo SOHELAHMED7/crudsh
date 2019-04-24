@@ -35,7 +35,7 @@ if [[ ! -w $filename ]]; then
 fi
 
 # show user list (1. default) during app bootstrap process
-list_with_pagination "$per_page_user" # this is function call. list_with_pagination is func name and $per_page_user is its first argument. Ensure to pass it in quote, or else empty value will not consider as argument. For eg $per_page_user is empty string  and $arg2 have some string value then only $arg2 is passed and will be passed as first arg in  list_with_pagination $per_page_user $arg2
+list_with_pagination "$per_page_user" # this is function call. list_with_pagination is function name and $per_page_user is its first argument. Ensure to pass it in quote, or else empty value will not consider as argument. For eg $per_page_user is empty string  and $arg2 have some string value then only $arg2 is passed and will be passed as first arg in  list_with_pagination $per_page_user $arg2
 
 # show menu to user at cli
 show_menu # function called with no arg
