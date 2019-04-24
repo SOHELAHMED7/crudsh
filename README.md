@@ -2,7 +2,7 @@
 
 [![Build Status](https://travis-ci.com/SOHELAHMED7/crudsh.svg?branch=master)](https://travis-ci.com/SOHELAHMED7/crudsh)
 
-[CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) to learn basic and widely used bash(GNU Bourne Again SHell) shell scripts snippets
+[CRUD](https://en.wikipedia.org/wiki/Create,_read,_update_and_delete) to learn basic and widely used bash(GNU Bourne Again SHell) shell scripts snippets. Data stored in plain text file (see users.txt).
 
 put gif here TODO
 
