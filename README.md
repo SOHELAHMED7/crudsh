@@ -59,6 +59,7 @@ put gif here TODO | git maker and editor ezgif.com
  - [Quick answer given at StackOverflow by mureinik](https://stackoverflow.com/a/55578826/3794786)
  - All links provided in code
  - users.txt is seeded from https://mockaroo.com/
+ - gif - https://ezgif.com
 
 ### Similar Project/Alternatives
  - https://www.shellscript.sh/exercises.html
