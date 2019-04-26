@@ -66,5 +66,8 @@
  - https://github.com/wlinnp/CRUD-operations-on-text-file
  - [andrewbihl/bsed](https://github.com/andrewbihl/bsed)
 
+### Licence
+[LICENCE](LICENCE)
+
 ### Is it any good?
 [Yes](https://news.ycombinator.com/item?id=3067434)
