@@ -67,7 +67,7 @@
  - [andrewbihl/bsed](https://github.com/andrewbihl/bsed)
 
 ### Licence
-[see](LICENSE)
+[GNU Affero General Public License v3.0](LICENSE)
 
 ### Is it any good?
 [Yes](https://news.ycombinator.com/item?id=3067434)
