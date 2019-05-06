@@ -50,7 +50,7 @@ take_menu_input_from_user() {
         page_number=$(expr "$page_number" '-' 1)
     elif [[ $option == "l" ]]; then
         echo "Last page"
-        page_number=`ceiling_divide "$total_user" "$per_page_user"` # calling fnuction with 2 arg and storing its return value in var
+        page_number=`ceiling_divide "$total_user" "$per_page_user"` # calling function with 2 arg and storing its return value in var
     elif [[ "$option" =~ p[1-9]\d* ]]; then # page no p1, p2, pn | pattern regex match
         page_number=${option:1} # omit first char of string
         echo "Page number: $page_number"
