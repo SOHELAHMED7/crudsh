@@ -60,7 +60,7 @@
  - All links provided in code
  - users.txt is seeded from https://mockaroo.com/
  - gif - https://ezgif.com
- - https://github.com/dylanaraps/pure-bash-bible
+ - [Pure bash Bible](https://github.com/dylanaraps/pure-bash-bible)
 
 ### Similar Project/Alternatives
  - https://www.shellscript.sh/exercises.html
